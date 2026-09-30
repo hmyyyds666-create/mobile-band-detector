@@ -1,0 +1,10 @@
+# 默认按文本处理，检出时统一 LF（保证 gradlew 在 Linux/macOS 可执行）
+* text=auto eol=lf
+
+# Windows 批处理必须 CRLF
+*.bat text eol=crlf
+
+# 二进制文件不做换行转换
+*.png binary
+*.jpg binary
+*.jar binary
